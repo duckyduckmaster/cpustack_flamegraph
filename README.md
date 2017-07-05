@@ -1,6 +1,7 @@
 # cpustack_flamegraph
-script to automize the creation of a flame graph (Brendan Gregg style)
+The purpose of this script is to automize the creation of a flame graph by using the framework created by Brendan Greggs 
 
-Collects cpu stack traces from dynamic tracing (perf on linux, dtrace on osx)
+Sysflame collects cpu stack traces by dynamic tracing (perf on linux, dtrace on osx) and generates a flamegraph from collected data. 
 
-python sysflame.py -o 'outputfilename'.svg -f 'flamegraph directory' -c 'command' -sf 'sampling rate for collecting cpu stack frames as int (for example 99)'
+The sysmap tool is intended for analysing stack trace rates of functions across multiple flamegraphs, and output the result
+in a matrix, which can then be used in a plotting program of your choosing. 
